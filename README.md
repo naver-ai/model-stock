@@ -6,7 +6,7 @@
 [NAVER AI LAB](https://naver-career.gitbook.io/en/teams/clova-cic/ai-lab) <br>
 
 
-This repository is the official PyTorch implementation of "Model Stock: All we need is just a few fine-tuned models" | [arxiv]()
+This repository is the official PyTorch implementation of "Model Stock: All we need is just a few fine-tuned models" | [arxiv](https://arxiv.org/abs/2403.19522)
 
 ### Abstract
 
