@@ -16,7 +16,6 @@ This codebase is built upon [Model Soups](https://github.com/mlfoundations/model
 
 ### News and updates
 - **(Aug. 2024)** Model Stock was selected as an <b>oral presentation</b> at ECCV 2024! 🎉
-- We will release the full code soon. Stay tuned!
 
 ### Abstract
 > This paper introduces an efficient fine-tuning method for large pre-trained models, offering strong in-distribution (ID) and out-of-distribution (OOD) performance. Breaking away from traditional practices that need a multitude of fine-tuned models for averaging, our approach employs significantly fewer models to achieve final weights yet yield superior accuracy. Drawing from key insights in the weight space of fine-tuned weights, we uncover a strong link between the performance and proximity to the center of weight space. Based on this, we introduce a method that approximates a center-close weight using only two fine-tuned models, applicable during or after training. Our innovative layer-wise weight averaging technique surpasses state-of-the-art model methods such as Model Soup, utilizing only two fine-tuned models. This strategy can be aptly coined *Model Stock*, highlighting its reliance on selecting a minimal number of models to draw a more optimized-averaged model. We demonstrate the efficacy of Model Stock with fine-tuned models based upon pre-trained CLIP architectures, achieving remarkable performance on both ID and OOD tasks on the standard benchmarks, all while barely bringing extra computational demands.
@@ -41,6 +40,8 @@ We present two scenarios: a small angle (left) and a large angle (right) between
 - This [tutorial notebook](notebooks/model_stock_example.ipynb) will help understanding how Model Stock works. Note that it is the simplified run of Model Stock without periodic merging. 
 - This [evaluation notebook](notebooks/model_stock_eval.ipynb) will show the performance of pre-uploaded Model Stock weights on ImageNet and five distribution shift benchmarks.
 - End-to-end training and evaluation code will be released soon.
+### Model Stock weights 
+- You can download the pre-trained, fine-tuned, uniform, greedy soup, and model stock weights here: [link](https://www.dropbox.com/scl/fo/shyzn327ge206n3fimomd/AKY_mVAN_kFiR2ejpAGPHQ8?rlkey=qk76yc6jisv8fjf2zdtrw4ki6&st=m43urvv3&dl=0)
 
 ### Third-party implementation
 - Implementation by [merge-kit](https://github.com/arcee-ai/mergekit/blob/main/mergekit/merge_methods/model_stock.py)
